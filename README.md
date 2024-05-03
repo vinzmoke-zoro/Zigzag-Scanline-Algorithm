@@ -81,7 +81,8 @@ ros2 topic echo /odom
 ```
 This will cause the data being published to odom to be printed in the terminal. It will show us info like the robot current position within the map. It will be constantly updated. To view the data more easily, use ctrl + c to get the updates to stop. Since the robot won’t be moving, we will still have access to the desired data.  
 
-This is what the /odom echo will look like.
+**This is what the /odom echo will look like:**
+
 ![image](https://github.com/vinzmoke-zoro/Zigzag-Scanline-Algorithm/assets/63388102/126f0c7d-01b2-4b7c-9529-5c88cd23b4f2)
 
 We want to take note of the x and y positions. 
@@ -89,11 +90,12 @@ Write these down and make sure to take note of which position this is.
 If this is position 1, I might write down: “1: (-2.7871, -1.2062, 0)”
 The third coordinate is the z-coordinate, this will remain a constant 0 for all waypoints. 
 Make sure not to make any of the waypoints too close to the wall. Additionally, make sure to keep the robot out of the cyan area on the map. 
-This is an example of poor robot placement: 
+
+**This is an example of poor robot placement:**
  ![image](https://github.com/vinzmoke-zoro/Zigzag-Scanline-Algorithm/assets/63388102/b083d2ce-b40f-4768-88b4-5e638b3993ec)
 The robot here is too far into the cyan area, this will cause nav2 to have a hard time making the robot navigate to that point. 
 
-Here is an example of good robot placement: 
+**Here is an example of good robot placement:** 
  ![image](https://github.com/vinzmoke-zoro/Zigzag-Scanline-Algorithm/assets/63388102/098e4b45-1459-4e31-989f-75290e6568ff)
 
 This placement is much better. The robot is just barely touching the cyan area and majority of the robot is in the purple area. 
@@ -111,7 +113,8 @@ code .
 this will pull VS Code. You may need to download VS Code. 
 Once in VS Code, use the bar on the left to navigate to the create3_simple_zigzag file. 
 Just above the call to nav.followwaypoints, add your waypoints using the template. 
-A complete algorithm may look like: 
+
+**A complete algorithm may look like:** 
 ![image](https://github.com/vinzmoke-zoro/Zigzag-Scanline-Algorithm/assets/63388102/f7a240d9-57d9-4907-8f39-2405b062bad4)
 
 The final waypoint will make the robot return to the origin of the map. 
