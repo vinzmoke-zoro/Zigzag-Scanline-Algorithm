@@ -72,7 +72,7 @@ NOTE: that you should append “.yaml” to the end of the name of the desired m
 
 ### Creating waypoints for the robot to follow
 Now we need to find the proper waypoints to get the robot to move in the desired zigzag pattern.  
-[ADD] image of zigzag pattern
+![bgzigzag](https://github.com/vinzmoke-zoro/Zigzag-Scanline-Algorithm/assets/63388102/dc1c787c-f197-4407-b783-4428d278c24a)
 
 
 You will need to move the robot to the proper locations. Move the robot to position 1, and then in a new terminal run: 
