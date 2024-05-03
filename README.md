@@ -3,10 +3,10 @@
 ### Firstly, some tools need to be downloaded: 
 
 Follow the instructions in the link to install **ROS2 Humble**:
-ROS2 Humble: https://docs.ros.org/en/humble/Installation.html 
+https://docs.ros.org/en/humble/Installation.html 
 
 Follow the instructions in the link to install **NAV2**:
-NAV2: https://navigation.ros.org/getting_started/index.html 
+https://navigation.ros.org/getting_started/index.html 
 
 Then install **Turtlebot3** with the following command:
 ```
