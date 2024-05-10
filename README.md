@@ -122,16 +122,17 @@ code .
 ```
 this will pull VS Code. You may need to download VS Code. 
 Once in VS Code, use the bar on the left to navigate to the create3_simple_zigzag file. 
-Just above the call to nav.followwaypoints, add your waypoints using the template. 
+But at first you need to create a .txt file with all the coordinates. You have to seperate x and y coordinate with a space in between and make sure they are of data type float/double.
+So, now you will copy the path to your file with the coordinates and in the create3_simple_zigzag file you will add that path to the waypoints_file variable.
 
-**A complete algorithm may look like:** 
+**A complete set of coordinates may look like:** 
 <p align="center">
- <img src = https://github.com/vinzmoke-zoro/Zigzag-Scanline-Algorithm/assets/63388102/f7a240d9-57d9-4907-8f39-2405b062bad4>
+ <img src = https://github.com/vinzmoke-zoro/Zigzag-Scanline-Algorithm/assets/63388102/4e2e8728-2198-41fd-a447-1cb368cdbccd>
 </p>
 
 The final waypoint will make the robot return to the origin of the map. 
 >[!IMPORTANT]
->make sure to use 0.0 instead of just 0 for the x- and y-coordinates. It does matter for the z-coordinate. 
+>make sure to use 0.0 instead of just 0 for the x and y-coordinates. 
 
 ###
 Once the those are taken care of go back to the root directory which is **your_ws**: 
