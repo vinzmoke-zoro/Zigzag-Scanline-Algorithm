@@ -153,8 +153,14 @@ the robot will now follow the waypoints that you put into the script.
 # Gazebo Instruction
 Alternatively, if you are using gazebo, the steps are similar.
 At first you have to set up gazebo. Follow the instructions in this link:
+
 https://classic.gazebosim.org/tutorials?tut=install_ubuntu
-Once you are done installing and setting up gazebo, you can go directly to mapping using cartographer, as you don't need to launch the sensors and other tools, its already integrated into gazebo:
+
+Once you are done installing and setting up gazebo you have to launch gazebo with your desired world:
+```
+ros2 launch turtlebot3_gazebo your_world.launch.py 
+```
+Now, you can go directly to mapping using cartographer, as you don't need to launch the sensors and other tools, its already integrated into gazebo:
 ```
 ros2 launch turtlebot3_cartographer cartographer.launch.py 
 ```
@@ -259,7 +265,7 @@ Then build and source the package:
 colcon build --symlink-install
 source ~/your_ws/install/setup.bash
 ```
-Now to run the script, keep the **sensors**, the **slam_toolbox**, and **nav2** running. 
+Now to run the script, keep the **gazebo** and **nav2** running. 
 With all these processes running, run the script: 
 ```
 ros2 run create_controller create3_simple_zigzag
