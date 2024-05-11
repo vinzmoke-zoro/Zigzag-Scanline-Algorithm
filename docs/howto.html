@@ -193,14 +193,14 @@ $(function(){initNavTree('howto.html',''); initResizable(); });
     <p align="center"><img src="https://github.com/vinzmoke-zoro/Zigzag-Scanline-Algorithm/assets/63388102/3659c54f-aeb8-41d1-8b07-5dbf0355cf06" alt="Zigzag pattern"></p>
     <p>You will need to move the robot to the proper locations. Move the robot to position 1, and then in a new terminal run:</p>
     <pre>
-    <code>ros2 topic echo /odom</code>
+    <code>ros2 topic echo /amcl_pose | grep -A 2 'position:'</code>
     </pre>
-    <p>This will cause the data being published to odom to be printed in the terminal. It will show us info like the robot current position within the map. It will be constantly updated. To view the data more easily, use ctrl + c to get the updates to stop. Since the robot won’t be moving, we will still have access to the desired data.</p>
+    <p>This will print the robot's current position in the terminal. The robot's position will keep printing as long as the position is being changed. When it's idle nothing will output but the positions already printed will still be there.</p>
 
-    <p><strong>This is what the /odom echo will look like:</strong></p>
-    <p align="center"><img src="https://github.com/vinzmoke-zoro/Zigzag-Scanline-Algorithm/assets/63388102/126f0c7d-01b2-4b7c-9529-5c88cd23b4f2" alt="Robot position data"></p>
+    <p><strong>This is what you should see when you run the above command:</strong></p>
+    <p align="center"><img src="https://github.com/vinzmoke-zoro/Zigzag-Scanline-Algorithm/assets/63388102/82364307-28a9-4956-bd8f-3ac8251aa6d1" alt="Robot position data"></p>
 
-    <p>We want to take note of the x and y positions. Write these down and make sure to take note of which position this is. If this is position 1, I might write down: “1: (-2.7871, -1.2062, 0)” The third coordinate is the z-coordinate, this will remain a constant 0 for all waypoints. Make sure not to make any of the waypoints too close to the wall. Additionally, make sure to keep the robot out of the cyan area on the map.</p>
+    <p>We want to take note of the x and y positions. Write these down and make sure to take note of which position this is. If this is position 1, I might write down: “1: (-2.7871, -1.2062)”. Make sure not to make any of the waypoints too close to the wall. Additionally, make sure to keep the robot out of the cyan area on the map.</p>
 
     <p><strong>Here is an example of poor robot placement:</strong></p>
     <p align="center"><img src="https://github.com/vinzmoke-zoro/Zigzag-Scanline-Algorithm/assets/63388102/b083d2ce-b40f-4768-88b4-5e638b3993ec" alt="Poor robot placement"></p>
