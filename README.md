@@ -80,20 +80,19 @@ Now we need to find the proper waypoints to get the robot to move in the desired
 You will need to move the robot to the proper locations. Move the robot to position 1, and then in a new terminal run: 
 
 ```
-ros2 topic echo /odom
+ros2 topic echo /amcl_pose | grep -A 2 'position:'
 ```
-This will cause the data being published to odom to be printed in the terminal. It will show us info like the robot current position within the map. It will be constantly updated. To view the data more easily, use ctrl + c to get the updates to stop. Since the robot won’t be moving, we will still have access to the desired data.  
+This will print the robot's current position in the terminal. The robot's position will keep printing as long as the position is being changed. When it's idle nothing will output but the positions already printed will still be there.
 
-**This is what the /odom echo will look like:**
+**This is what you should see when you run the above command:**
 
 <p align="center">
- <img src = https://github.com/vinzmoke-zoro/Zigzag-Scanline-Algorithm/assets/63388102/126f0c7d-01b2-4b7c-9529-5c88cd23b4f2>
+ <img src = https://github.com/vinzmoke-zoro/Zigzag-Scanline-Algorithm/assets/63388102/82364307-28a9-4956-bd8f-3ac8251aa6d1>
 </p>
 
 We want to take note of the x and y positions. 
 Write these down and make sure to take note of which position this is. 
-If this is position 1, I might write down: “1: (-2.7871, -1.2062, 0)”
-The third coordinate is the z-coordinate, this will remain a constant 0 for all waypoints. 
+If this is position 1, I might write down: “1: (-2.7871, -1.2062)”
 Make sure not to make any of the waypoints too close to the wall. Additionally, make sure to keep the robot out of the cyan area on the map. 
 
 **This is an example of poor robot placement:**
