@@ -150,7 +150,7 @@ ros2 run create_controller create3_simple_zigzag
 ```
 the robot will now follow the waypoints that you put into the script. 
 
-## Gazebo Instruction
+# Gazebo Instruction
 Alternatively, if you are using gazebo, the steps are similar.
 At first you have to set up gazebo. Follow the instructions in this link:
 https://classic.gazebosim.org/tutorials?tut=install_ubuntu
