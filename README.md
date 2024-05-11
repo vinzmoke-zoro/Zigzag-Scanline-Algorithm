@@ -92,7 +92,7 @@ This will print the robot's current position in the terminal. The robot's positi
 
 We want to take note of the x and y positions. 
 Write these down and make sure to take note of which position this is. 
-If this is position 1, I might write down: “1: (-2.7871, -1.2062)”
+If this is position 1, I might write down: “-2.7871, -1.2062”
 Make sure not to make any of the waypoints too close to the wall. Additionally, make sure to keep the robot out of the cyan area on the map. 
 
 **This is an example of poor robot placement:**
