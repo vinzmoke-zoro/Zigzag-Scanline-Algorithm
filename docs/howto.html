@@ -250,7 +250,11 @@ $(function(){initNavTree('howto.html',''); initResizable(); });
   <p>Alternatively, if you are using gazebo, the steps are similar.
 At first you have to set up gazebo. Follow the instructions in this link:</p>
     <p><a href="https://classic.gazebosim.org/tutorials?tut=install_ubuntu">Gazebo Installation</a></p>
-<p>Once you are done installing and setting up gazebo, you can go directly to mapping using cartographer, as you don't need to launch the sensors and other tools, its already integrated into gazebo:</p>
+  <p>Once you are done installing and setting up gazebo you have to launch gazebo with your desired world:</p>
+  <pre>
+  <code>ros2 launch turtlebot3_gazebo your_world.launch.py </code>
+  </pre>
+<p>Now, you can go directly to mapping using cartographer, as you don't need to launch the sensors and other tools, its already integrated into gazebo:</p>
   <pre>
     <code>ros2 launch turtlebot3_cartographer cartographer.launch.py</code>
     </pre>
@@ -337,7 +341,7 @@ At first you have to set up gazebo. Follow the instructions in this link:</p>
     <code>colcon build --symlink-install</code>
     <code>source ~/your_ws/install/setup.bash</code>
     </pre>
-    <p>Now to run the script, keep the <strong>sensors</strong>, the <strong>slam_toolbox</strong>, and <strong>nav2</strong> running. With all these processes running, run the script:</p>
+    <p>Now to run the script, keep the <strong>gazebo</strong> and <strong>nav2</strong> running. With all these processes running, run the script:</p>
     <pre>
     <code>ros2 run create_controller create3_simple_zigzag</code>
     </pre>
