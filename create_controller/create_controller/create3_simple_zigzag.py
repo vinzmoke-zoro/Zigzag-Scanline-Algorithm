@@ -1,3 +1,5 @@
+# Authors: Imtiaz Rahman and Liam Maher
+
 import rclpy
 from nav2_simple_commander.robot_navigator import BasicNavigator
 from geometry_msgs.msg import PoseStamped
