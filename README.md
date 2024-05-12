@@ -273,3 +273,5 @@ With all these processes running, run the script:
 ros2 run create_controller create3_simple_zigzag
 ```
 the robot will now follow the waypoints that you put into the script. 
+
+## I have uploaded a video example of how the zigag algorithm performs in Gazebo for demonstration purpose. You can find it in this repository as "Gazebo_Simulation_Zigzag.mp4". The video has been sped up to save time by keeping the video duration short.
