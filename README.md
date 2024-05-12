@@ -87,7 +87,7 @@ This will print the robot's current position in the terminal. The robot's positi
 **This is what you should see when you run the above command:**
 
 <p align="center">
- <img src = https://github.com/vinzmoke-zoro/Zigzag-Scanline-Algorithm/assets/63388102/82364307-28a9-4956-bd8f-3ac8251aa6d1>
+ <img src = https://github.com/vinzmoke-zoro/Zigzag-Scanline-Algorithm/assets/63388102/326fecf8-8f4a-4a5b-9de6-64a7becadd7e>
 </p>
 
 We want to take note of the x and y positions. 
